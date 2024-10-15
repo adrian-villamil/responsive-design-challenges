@@ -17,11 +17,13 @@ export const Card = () => {
           <Image
             src={HeroImage}
             alt="hero-image"
+            priority
           />
           <Image
             src={WhiteOverlay}
             alt="white-overlay"
             className="absolute -bottom-[1px] w-full"
+            priority
           />
         </div>
         <div className="px-8 pb-6 space-y-4">
@@ -34,6 +36,7 @@ export const Card = () => {
           <Image
             src={AvatarImage}
             alt="avatar-image"
+            priority
           />
         </div>
         <div>
