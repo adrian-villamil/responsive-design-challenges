@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CactusImage from '@/assets/images/cactus_img.jpg';
+import CactusImage from '../assets/cactus_img.jpg';
 
 export const Card = () => {
   return (

@@ -1,5 +1,5 @@
-import { Card } from "@/components/business-blog-card/card";
 import { Lato } from "next/font/google";
+import { Card } from "@/challenges/business-blog-card/components/card";
 
 const lato = Lato({
   subsets: ['latin'],

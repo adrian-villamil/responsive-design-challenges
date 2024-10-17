@@ -1,8 +1,8 @@
 import Image from "next/image";
-import HeroImage from "@/assets/images/hero-image-business-card.png";
-import WhiteOverlay from "@/assets/images/white-overlay.svg";
-import AvatarImage from "@/assets/images/avatar-image-business-card.png";
-import { Poppins } from "next/font/google";
+import { Poppins } from "next/font/google"; 
+import HeroImage from "../assets/hero-image-business-card.png";
+import WhiteOverlay from "../assets/white-overlay.svg";
+import AvatarImage from "../assets/avatar-image-business-card.png";
 
 const poppins = Poppins({
   subsets: ['latin'],

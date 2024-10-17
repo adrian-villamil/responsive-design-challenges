@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CheckListIcon from "@/assets/images/Done_ring_round_fill.svg";
+import CheckListIcon from "../assets/Done_ring_round_fill.svg";
 
 interface CheckListItemProps {
   text: string;

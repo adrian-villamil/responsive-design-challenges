@@ -1,9 +1,9 @@
-import { Card } from "@/components/testimonial-page/card";
-import { MdxImage as Image } from "@/components/testimonial-page/mdx-image";
-import GoogleIcon from "@/assets/images/google-testimonial.png";
-import MetaIcon from "@/assets/images/meta-testimonial.png";
 import { Sora } from "next/font/google";
-import { CheckList, CheckListItem } from "@/components/testimonial-page/check-list";
+import { Card } from "@/challenges/testimonial-page/components/card";
+import { MdxImage as Image } from "@/challenges/testimonial-page/components/mdx-image";
+import { CheckList, CheckListItem } from "@/challenges/testimonial-page/components/check-list";
+import GoogleIcon from "@/challenges/testimonial-page/assets/google-testimonial.png";
+import MetaIcon from "@/challenges/testimonial-page/assets/meta-testimonial.png";
 
 const sora = Sora({
   subsets: ['latin'],

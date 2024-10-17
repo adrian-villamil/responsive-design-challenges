@@ -1,8 +1,6 @@
-'use-client';
-
 import { MdxImage as Image } from "./mdx-image";
-import StarGold from "@/assets/images/Star_fill.svg";
-import StarGray from "@/assets/images/Star_fill_gray.svg";
+import StarGold from "../assets/Star_fill.svg";
+import StarGray from "../assets/Star_fill_gray.svg";
 
 
 interface Props {
