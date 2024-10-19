@@ -42,7 +42,7 @@ export const Form = () => {
   );
 };
 
-interface LabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> { }
+type LabelProps = React.LabelHTMLAttributes<HTMLLabelElement>;
 
 const Label = ({ ...props }: LabelProps) => {
   return (
@@ -55,7 +55,7 @@ const Label = ({ ...props }: LabelProps) => {
   );
 };
 
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> { }
+type InputProps = React.InputHTMLAttributes<HTMLInputElement>;
 
 const Input = ({ ...props }: InputProps) => {
   return (
@@ -66,7 +66,7 @@ const Input = ({ ...props }: InputProps) => {
   );
 };
 
-interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> { }
+type SelectProps = React.SelectHTMLAttributes<HTMLSelectElement>;
 
 const Select = ({ ...props }: SelectProps) => {
   return (
