@@ -1,6 +1,5 @@
 import {Sora} from "next/font/google";
-import { Card } from "@/challenges/minimal-blog-card/components/card";
-
+import { Card } from "@/components/minimal-blog-card/card";
 
 const sora = Sora({
   subsets: ['latin']

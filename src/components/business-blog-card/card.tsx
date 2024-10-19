@@ -1,8 +1,5 @@
 import Image from "next/image";
-import { Poppins } from "next/font/google"; 
-import HeroImage from "../assets/hero-image-business-card.png";
-import WhiteOverlay from "../assets/white-overlay.svg";
-import AvatarImage from "../assets/avatar-image-business-card.png";
+import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -15,13 +12,18 @@ export const Card = () => {
       <div>
         <div className="relative">
           <Image
-            src={HeroImage}
+            src={'/business-blog-card/hero-image-business-card.png'}
             alt="hero-image"
+            width={836}
+            height={560}
+            className="w-full"
             priority
           />
           <Image
-            src={WhiteOverlay}
+            src={'/business-blog-card/white-overlay.svg'}
             alt="white-overlay"
+            width={418}
+            height={68}
             className="absolute -bottom-[1px] w-full"
             priority
           />
@@ -34,8 +36,11 @@ export const Card = () => {
       <div className="px-8 py-6 flex items-center gap-x-4">
         <div className="w-9 rounded-full overflow-hidden outline outline-offset-1 outline-3 outline-[#F2F5F9]">
           <Image
-            src={AvatarImage}
+            src={'/business-blog-card/avatar-image-business-card.png'}
             alt="avatar-image"
+            width={100}
+            height={100}
+            className="w-full"
             priority
           />
         </div>

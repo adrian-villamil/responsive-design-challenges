@@ -1,9 +1,7 @@
 import { Sora } from "next/font/google";
-import { Card } from "@/challenges/testimonial-page/components/card";
-import { MdxImage as Image } from "@/challenges/testimonial-page/components/mdx-image";
-import { CheckList, CheckListItem } from "@/challenges/testimonial-page/components/check-list";
-import GoogleIcon from "@/challenges/testimonial-page/assets/google-testimonial.png";
-import MetaIcon from "@/challenges/testimonial-page/assets/meta-testimonial.png";
+import { CheckList, CheckListItem } from "@/components/testimonial-page/check-list";
+import { MdxImage as Image } from "@/components/testimonial-page/mdx-image";
+import { Card } from "@/components/testimonial-page/card";
 
 const sora = Sora({
   subsets: ['latin'],
@@ -30,8 +28,10 @@ export default function TestimonialPage() {
             rating={4}
             testimonialIcon={
               <Image
-                src={GoogleIcon}
+                src={'/testimonial-page/google-testimonial.png'}
                 alt="google-icon"
+                width={480}
+                height={160}
                 className="w-[90px]"
                 priority
               />
@@ -44,8 +44,10 @@ export default function TestimonialPage() {
             rating={5}
             testimonialIcon={
               <Image
-                src={MetaIcon}
+                src={'/testimonial-page/meta-testimonial.png'}
                 alt="meta-icon"
+                width={420}
+                height={160}
                 className="w-20"
                 priority
               />

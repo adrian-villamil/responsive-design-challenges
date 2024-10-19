@@ -1,7 +1,4 @@
 import { MdxImage as Image } from "./mdx-image";
-import StarGold from "../assets/Star_fill.svg";
-import StarGray from "../assets/Star_fill_gray.svg";
-
 
 interface Props {
   rating: 1 | 2 | 3 | 4 | 5;
@@ -24,8 +21,24 @@ export const Card = ({ rating, testimonialIcon, testimonialName, testimonialComm
       <div className="flex items-center gap-4">
         {testimonialIcon}
         <div className="flex gap-1">
-          {generateStars(rating).goldStars.map((v) => <Image key={v} src={StarGold} alt="star-gold" />)}
-          {generateStars(rating).grayStars.map((v) => <Image key={v} src={StarGray} alt="star-gray" />)}
+          {generateStars(rating).goldStars.map((v) => (
+            <Image
+              key={v}
+              src={'/testimonial-page/Star_fill.svg'}
+              alt="star-gold"
+              width={24}
+              height={24}
+            />
+          ))}
+          {generateStars(rating).grayStars.map((v) => (
+            <Image
+              key={v}
+              src={'/testimonial-page/Star_fill_gray.svg'}
+              alt="star-gray"
+              width={24}
+              height={24}
+            />
+          ))}
         </div>
       </div>
       <div className="space-y-2">
