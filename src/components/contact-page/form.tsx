@@ -1,6 +1,6 @@
 export const Form = () => {
   return (
-    <form action="" className="sm:w-full xl:max-w-[810px] mx-auto mt-[70px] p-8 pb-28 rounded-3xl grid grid-cols-1 lg:grid-cols-2 gap-x-[18px] gap-y-[22px] bg-[#F8FAFC]/20">
+    <form action="" className="sm:w-full xl:max-w-[810px] mx-auto mt-[70px] p-8 pb-28 lg:pb-8 rounded-3xl grid grid-cols-1 lg:grid-cols-2 gap-x-[18px] gap-y-[22px] bg-[#F8FAFC]/20">
       <div className="flex flex-col">
         <Label htmlFor="name">Name</Label>
         <Input type="text" id="name" placeholder="Ethan Johnson" />
