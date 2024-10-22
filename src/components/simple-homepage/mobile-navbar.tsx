@@ -5,6 +5,7 @@ import { ThemeToggle } from "./theme-toggle";
 import { CloseMenuButton } from "./close-menu-button";
 import clsx from "clsx";
 import { useUIStore } from "@/store/simple-homepage/ui-store";
+import { useEffect } from "react";
 
 const anchors = [
   { label: 'About us' },
@@ -17,11 +18,27 @@ export const MobileNavbar = () => {
   const isMobileMenuOpen = useUIStore(state => state.isMobileMenuOpen);
   const closeMobileMenu = useUIStore(state => state.closeMobileMenu);
 
+  useEffect(() => {
+    const largeMediaQuery = window.matchMedia('(min-width: 1024px)');
+
+    const handleMediaQueryChange = (event: MediaQueryListEvent) => {
+      if (event.matches) {
+        closeMobileMenu();
+      }
+    };
+
+    largeMediaQuery.addEventListener('change', handleMediaQueryChange);
+
+    return () => {
+      largeMediaQuery.removeEventListener('change', handleMediaQueryChange);
+    };
+  }, []);
+
   return (
     <div>
       {isMobileMenuOpen && <div className="fixed top-0 left-0 w-screen h-screen" onClick={closeMobileMenu}></div>}
       <div className={clsx(
-        "fixed top-0 right-0 w-[410px] h-screen bg-white dark:bg-[#909193] transition-all",
+        "fixed top-0 right-0 w-[410px] h-screen bg-white dark:bg-[#17213d] transition-all",
         {
           'translate-x-full': !isMobileMenuOpen
         }

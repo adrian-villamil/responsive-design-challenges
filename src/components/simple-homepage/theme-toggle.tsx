@@ -14,7 +14,7 @@ export const ThemeToggle = () => {
     setTheme(checked ? 'dark' : 'light');
   };
 
-  if (!mounted) return null;
+  if (!mounted) return <ThemeToggleSkeleton />;
 
   return (
     <label
@@ -38,3 +38,9 @@ export const ThemeToggle = () => {
     </label>
   );
 };
+
+const ThemeToggleSkeleton = () => {
+  return (
+    <div className="w-12 h-6 rounded-3xl animate-pulse bg-[#223344]"></div>
+  );
+}

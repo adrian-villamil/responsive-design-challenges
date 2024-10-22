@@ -7,9 +7,9 @@ export const OpenMenuButton = () => {
   
   return (
     <button className="space-y-1 lg:hidden" onClick={openMenu}>
-      <div className="w-[22px] h-[3px] rounded bg-[#223344] dark:bg-[#F2F9FE]/40"></div>
-      <div className="w-[22px] h-[3px] rounded bg-[#223344] dark:bg-[#F2F9FE]/40"></div>
-      <div className="w-[22px] h-[3px] rounded bg-[#223344] dark:bg-[#F2F9FE]/40"></div>
+      <div className="w-[22px] h-[3px] rounded bg-[#223344] dark:bg-[#909193]"></div>
+      <div className="w-[22px] h-[3px] rounded bg-[#223344] dark:bg-[#909193]"></div>
+      <div className="w-[22px] h-[3px] rounded bg-[#223344] dark:bg-[#909193]"></div>
     </button>
   );
 };
