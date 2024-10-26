@@ -53,7 +53,7 @@ const challenges = [
 
 export const ChallengesList = () => {
   return (
-    <div className="max-w-screen-xl mx-auto mt-20 flex flex-wrap justify-center gap-8">
+    <div className="max-w-screen-xl mx-auto mt-20 pb-20 flex flex-wrap justify-center gap-8">
       {challenges.map((challenge) => <ChallengesListCard key={challenge.image} {...challenge} />)}
     </div>
   );
