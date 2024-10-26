@@ -30,7 +30,7 @@ export const Form = () => {
         <textarea
           name="message"
           id="message"
-          className="w-full h-52 mt-[3px] p-[22px] rounded-2xl font-bold"
+          className="w-full h-52 mt-[3px] p-[22px] rounded-2xl font-bold bg-[#F8FAFC]"
           defaultValue={'50-100 employees'}
         >
         </textarea>
@@ -61,7 +61,7 @@ const Input = ({ ...props }: InputProps) => {
   return (
     <input
       {...props}
-      className="mt-[3px] p-[22px] rounded-2xl placeholder:text-[#CDD5E0]"
+      className="mt-[3px] p-[22px] rounded-2xl bg-[#F8FAFC] placeholder:text-[#CDD5E0]"
     />
   );
 };
@@ -72,7 +72,7 @@ const Select = ({ ...props }: SelectProps) => {
   return (
     <select
       {...props}
-      className="w-full mt-[3px] p-[22px] rounded-2xl font-bold appearance-none bg-[url('/contact-page/Expand_down.svg')] bg-no-repeat bg-[center_right_1.3rem]"
+      className="w-full mt-[3px] p-[22px] rounded-2xl font-bold appearance-none bg-[#F8FAFC] bg-[url('/contact-page/Expand_down.svg')] bg-no-repeat bg-[center_right_1.3rem]"
     >
       {props.children}
     </select>
