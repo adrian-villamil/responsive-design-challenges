@@ -40,7 +40,7 @@ export const GridList = () => {
       <div className="col-span-2 lg:col-span-3 xl:col-span-2 pt-8 pl-8">
         <span className="text-[#3662E3]">Our team</span>
         <h1 className="text-[40px] font-medium my-[5px] tracking-[-0.01em]">Meet the brain</h1>
-        <p className="max-w-[470px] text-[#394150] leading-5 tracking-[-0.01em]">We are proud to have them as part of our community and look forward to continuing to push the boundaries of what's possible in the world of digital art.</p>
+        <p className="max-w-[470px] text-[#394150] leading-5 tracking-[-0.01em]">{"We are proud to have them as part of our community and look forward to continuing to push the boundaries of what's possible in the world of digital art."}</p>
       </div>
       {members.map((member) => (
         <GridListItem key={member.image} {...member} />
