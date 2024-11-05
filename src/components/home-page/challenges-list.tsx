@@ -2,10 +2,22 @@ import { ChallengesListCard } from "./challenges-list-card";
 
 const challenges = [
   {
-    image: '/challenges/simple-article-listing.png',
-    title: 'Simple Article Listing',
-    pathname: '/simple-article-listing',
-    challengeUrl: 'https://devchallenges.io/challenge/simple-article-listing',
+    image: '/challenges/pricing-table.png',
+    title: 'Pricing Table',
+    pathname: '/pricing-table',
+    challengeUrl: 'https://devchallenges.io/challenge/pricing-table-section-challenge',
+  },
+  {
+    image: '/challenges/meet-team-section.png',
+    title: 'Meet the Team Section',
+    pathname: '/meet-team-section',
+    challengeUrl: 'https://devchallenges.io/challenge/meet-the-team-section-challenge',
+  },
+  {
+    image: '/challenges/simple-feature-section.png',
+    title: 'Simple Feature Section',
+    pathname: '/simple-feature-section',
+    challengeUrl: 'https://devchallenges.io/challenge/simple-feature-section-challenge',
   },
   {
     image: '/challenges/join-our-newsletter.png',
