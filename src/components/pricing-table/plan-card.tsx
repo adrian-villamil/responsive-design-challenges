@@ -30,6 +30,7 @@ export const PlanCard = ({
   const isFree = name === 'Free';
   const isTeam = name === 'Team';
   const isPopular = name === 'Popular';
+  const isEnterprise = name === 'Enterprise';
 
   return (
     <div className={clsx(
@@ -37,6 +38,7 @@ export const PlanCard = ({
       isFree && 'hidden xl:block',
       isTeam && 'hidden lg:block',
       isPopular && 'bg-[#121826] order-last lg:order-none',
+      isEnterprise && 'hidden md:block',
     )}>
       <div className="h-[210px] pt-6">
         <p className={clsx(
