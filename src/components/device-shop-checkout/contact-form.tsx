@@ -29,7 +29,7 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
 }
 
-const Input = ({ label, className, ...props }: InputProps) => {
+const Input = ({ label, ...props }: InputProps) => {
   return (
     <div>
       <label

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const products = [
   {
     name: 'iPhone 12 Pro',
