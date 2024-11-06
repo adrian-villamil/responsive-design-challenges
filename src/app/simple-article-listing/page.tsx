@@ -1,6 +1,12 @@
-import { ArticleList } from "@/components/simple-article-listing/article-list";
-import { Poppins } from "next/font/google";
 import Image from "next/image";
+import { Metadata } from "next";
+import { Poppins } from "next/font/google";
+import { ArticleList } from "@/components/simple-article-listing/article-list";
+
+export const metadata: Metadata = {
+  title: 'Simple Article Listing',
+  description: 'Simple Article Listing Challenge from devchallenges.io',
+};
 
 const poppinFont = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],

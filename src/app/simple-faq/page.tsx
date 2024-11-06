@@ -1,5 +1,11 @@
-import { Inter } from "next/font/google";
 import Link from "next/link";
+import { Metadata } from "next";
+import { Inter } from "next/font/google";
+
+export const metadata: Metadata = {
+  title: 'Simple Frequently Asked Questions (FAQ)',
+  description: 'Simple Frequently Asked Questions (FAQ) Challenge from devchallenges.io',
+};
 
 const interFont = Inter({
   subsets: ['latin']

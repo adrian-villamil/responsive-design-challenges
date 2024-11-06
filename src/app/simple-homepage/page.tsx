@@ -1,8 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { MobileNavbar } from "@/components/simple-homepage/mobile-navbar";
 import { Navbar } from "@/components/simple-homepage/navbar";
+
+export const metadata: Metadata = {
+  title: 'Simple Homepage - Alarado',
+  description: 'Simple Homepage - Alarado Challenge from devchallenges.io',
+};
 
 const poppinsFont = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],

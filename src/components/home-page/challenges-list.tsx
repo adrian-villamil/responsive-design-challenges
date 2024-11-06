@@ -2,6 +2,12 @@ import { ChallengesListCard } from "./challenges-list-card";
 
 const challenges = [
   {
+    image: '/challenges/device-shop-checkout.png',
+    title: 'Device Shop Checkout',
+    pathname: '/device-shop-checkout',
+    challengeUrl: 'https://devchallenges.io/challenge/apple-shop-checkout-page-challenge',
+  },
+  {
     image: '/challenges/pricing-table.png',
     title: 'Pricing Table',
     pathname: '/pricing-table',

@@ -4,7 +4,7 @@ import { GridList } from "@/components/meet-team-section/grid-list";
 
 export const metadata: Metadata = {
   title: 'Meet the Team Section',
-  description: 'Responsive Web Design Challenge from devchallenges.io',
+  description: 'Meet the Team Section Challenge from devchallenges.io',
 };
 
 const outfitFont = Outfit({

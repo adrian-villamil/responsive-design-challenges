@@ -1,5 +1,11 @@
-import { SectionList } from "@/components/simple-feature-section/section-list";
+import { Metadata } from "next";
 import { Outfit } from "next/font/google";
+import { SectionList } from "@/components/simple-feature-section/section-list";
+
+export const metadata: Metadata = {
+  title: 'Simple Feature Section',
+  description: 'Simple Feature Section Challenge from devchallenges.io',
+};
 
 const outfitFont = Outfit({
   subsets: ['latin'],

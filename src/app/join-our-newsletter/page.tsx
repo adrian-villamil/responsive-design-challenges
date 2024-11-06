@@ -1,5 +1,11 @@
-import { Poppins } from "next/font/google";
 import Image from "next/image";
+import { Metadata } from "next";
+import { Poppins } from "next/font/google";
+
+export const metadata: Metadata = {
+  title: 'Join Our Newsletter',
+  description: 'Join Our Newsletter Challenge from devchallenges.io',
+};
 
 const poppinFont = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],

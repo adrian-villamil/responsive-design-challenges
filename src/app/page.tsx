@@ -1,5 +1,10 @@
 import { ChallengesList } from "@/components/home-page/challenges-list";
+import { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+
+export const metadata: Metadata = {
+  title: 'Responsive Web Design Challenges'
+};
 
 const montserratFont = Montserrat({
   subsets: ['latin'],

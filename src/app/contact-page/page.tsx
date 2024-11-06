@@ -1,6 +1,12 @@
 import Image from "next/image";
+import { Metadata } from "next";
 import { Be_Vietnam_Pro } from "next/font/google";
 import { Form } from "@/components/contact-page/form";
+
+export const metadata: Metadata = {
+  title: 'Contact Page',
+  description: 'Contact Page Challenge from devchallenges.io',
+};
 
 const beVietnamPro = Be_Vietnam_Pro({
   subsets: ['latin'],

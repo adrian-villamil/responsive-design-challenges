@@ -1,5 +1,11 @@
+import { Metadata } from "next";
 import { Lato } from "next/font/google";
 import { Card } from "@/components/business-blog-card/card";
+
+export const metadata: Metadata = {
+  title: 'Business Blog Card',
+  description: 'Business Blog Card Challenge from devchallenges.io',
+};
 
 const lato = Lato({
   subsets: ['latin'],

@@ -1,7 +1,13 @@
+import { Metadata } from "next";
 import { Sora } from "next/font/google";
 import { CheckList, CheckListItem } from "@/components/testimonial-page/check-list";
 import { MdxImage as Image } from "@/components/testimonial-page/mdx-image";
 import { Card } from "@/components/testimonial-page/card";
+
+export const metadata: Metadata = {
+  title: 'Testimonial Page',
+  description: 'Testimonial Page Challenge from devchallenges.io',
+};
 
 const sora = Sora({
   subsets: ['latin'],
