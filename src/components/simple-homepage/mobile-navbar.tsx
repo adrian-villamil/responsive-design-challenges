@@ -38,7 +38,7 @@ export const MobileNavbar = () => {
     <div>
       {isMobileMenuOpen && <div className="fixed top-0 left-0 w-screen h-screen" onClick={closeMobileMenu}></div>}
       <div className={clsx(
-        "fixed top-0 right-0 w-[410px] h-screen bg-white dark:bg-[#17213d] transition-all",
+        "fixed top-0 right-0 w-full sm:w-[410px] h-screen bg-white dark:bg-[#17213d] transition-all",
         {
           'translate-x-full': !isMobileMenuOpen
         }

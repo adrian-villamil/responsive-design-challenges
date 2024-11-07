@@ -58,7 +58,7 @@ const plans = [
 export const Table = () => {
   return (
     <div className="w-fit mx-auto mt-[60px] mb-[77px] flex">
-      <div className="w-[235px] pt-[210px] [&_div:first-child]:rounded-tl-xl [&_div:last-child]:rounded-bl-xl">
+      <div className="w-fit sm:w-[235px] pt-[210px] [&_div:first-child]:rounded-tl-xl [&_div:last-child]:rounded-bl-xl">
         <Feature name="Website number" />
         <Feature name="Server storage" />
         <Feature name="Database" />
@@ -82,7 +82,7 @@ interface FeatureProps {
 const Feature = ({ name }: FeatureProps) => {
   return (
     <div className="border-b overflow-hidden">
-      <p className="w-[215px] pl-3 flex justify-start items-center h-[51px] font-semibold bg-[#F8FAFC]">{name}</p>
+      <p className="w-[200px] sm:w-[215px] pl-3 flex justify-start items-center h-[51px] font-semibold bg-[#F8FAFC]">{name}</p>
     </div>
   );
 };

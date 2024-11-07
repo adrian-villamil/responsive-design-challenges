@@ -34,7 +34,7 @@ export const PlanCard = ({
 
   return (
     <div className={clsx(
-      "w-[220px] flex flex-col rounded-2xl overflow-hidden",
+      "w-44 sm:w-[220px] flex flex-col rounded-2xl overflow-hidden",
       isFree && 'hidden xl:block',
       isTeam && 'hidden lg:block',
       isPopular && 'bg-[#121826] order-last lg:order-none',

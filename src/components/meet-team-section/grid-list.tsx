@@ -36,16 +36,16 @@ const members = [
 
 export const GridList = () => {
   return (
-    <div className="w-fit mx-auto rounded-3xl overflow-hidden grid grid-cols-[repeat(2,_284px)] lg:grid-cols-[repeat(3,_284px)] xl:grid-cols-[repeat(4,_284px)] auto-rows-[288px] bg-[#F3F4F6] bg-[url('/meet-team-section/Background_decor.svg')] bg-no-repeat">
-      <div className="col-span-2 lg:col-span-3 xl:col-span-2 pt-8 pl-8">
+    <div className="w-fit mx-auto rounded-3xl overflow-hidden grid grid-cols-[284px] sm:grid-cols-[repeat(2,_284px)] lg:grid-cols-[repeat(3,_284px)] xl:grid-cols-[repeat(4,_284px)] auto-rows-[288px] bg-[#F3F4F6] bg-[url('/meet-team-section/Background_decor.svg')] bg-no-repeat">
+      <div className="col-span-1 sm:col-span-2 lg:col-span-3 xl:col-span-2 p-6 sm:p-8">
         <span className="text-[#3662E3]">Our team</span>
-        <h1 className="text-[40px] font-medium my-[5px] tracking-[-0.01em]">Meet the brain</h1>
+        <h1 className="text-[40px] font-medium my-[5px] tracking-[-0.01em] leading-10">Meet the brain</h1>
         <p className="max-w-[470px] text-[#394150] leading-5 tracking-[-0.01em]">{"We are proud to have them as part of our community and look forward to continuing to push the boundaries of what's possible in the world of digital art."}</p>
       </div>
       {members.map((member) => (
         <GridListItem key={member.image} {...member} />
       ))}
-      <div className="col-start-1 row-start-4 lg:row-start-3 xl:row-start-2 relative">
+      <div className="col-start-1 row-start-auto sm:row-start-4 lg:row-start-3 xl:row-start-2 relative">
         <Link href={'#'} className="absolute left-8 bottom-8 pr-5 font-medium text-[#394150] bg-[url('/meet-team-section/arrow_up_right.svg')] bg-no-repeat bg-[right_70%]">See all members</Link>
       </div>
     </div>

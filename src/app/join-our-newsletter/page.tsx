@@ -14,7 +14,7 @@ const poppinFont = Poppins({
 
 export default function JoinOurNewsletterPage() {
   return (
-    <main className={`h-screen flex flex-col items-center px-2 ${poppinFont.className} bg-[#F9FAFB]`}>
+    <main className={`h-screen flex flex-col items-center px-5 ${poppinFont.className} bg-[#F9FAFB]`}>
       <Image
         src={'/join-our-newsletter/logo-newsletter.svg'}
         alt="logo"
@@ -23,10 +23,10 @@ export default function JoinOurNewsletterPage() {
         priority
         className="mt-20"
       />
-      <h1 className="text-5xl font-semibold mt-7 mb-6">Join our newsletter</h1>
-      <p className="max-w-[700px] text-xl text-center text-[#6C727F] leading-[1.9rem]">Keep up with our latest collections, exclusive deals, and special offers!</p>
-      <p className="max-w-[700px] text-xl text-center text-[#6C727F] leading-[1.9rem]">We introduce a new collection every week, so stay tuned to snag the hottest items just for you.</p>
-      <form className="w-[560px] flex flex-col bg-white mt-14 p-6 rounded-2xl shadow-lg space-y-6">
+      <h1 className="text-3xl sm:text-5xl font-semibold mt-7 mb-6 text-center">Join our newsletter</h1>
+      <p className="max-w-[700px] text-base sm:text-xl text-center text-[#6C727F] sm:leading-[1.9rem]">Keep up with our latest collections, exclusive deals, and special offers!</p>
+      <p className="max-w-[700px] text-base sm:text-xl text-center text-[#6C727F] sm:leading-[1.9rem]">We introduce a new collection every week, so stay tuned to snag the hottest items just for you.</p>
+      <form className="w-fit sm:w-[560px] flex flex-col bg-white mt-10 sm:mt-14 p-6 rounded-2xl shadow-lg space-y-6">
         <input
           type="email"
           name="my-email"

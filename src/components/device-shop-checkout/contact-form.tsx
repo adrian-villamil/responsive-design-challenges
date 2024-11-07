@@ -3,7 +3,7 @@ export const ContactForm = () => {
     <form className="mt-8 space-y-7">
       <Input label="First & Last name" placeholder="Enter first & last name" />
       <Input label="Email Address" placeholder="Enter email address" />
-      <div className="grid grid-cols-2 gap-x-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-7">
         <div>
           <label htmlFor="country" className="block mb-3 text-sm font-semibold text-[#6C727F]">Country</label>
           <select

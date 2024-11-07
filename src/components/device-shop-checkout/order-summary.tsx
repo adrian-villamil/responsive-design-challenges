@@ -1,7 +1,7 @@
 export const OrderSummary = () => {
   return (
     <div className="pt-6 space-y-6">
-      <form className="flex gap-x-2">
+      <form className="flex flex-col sm:flex-row gap-2">
         <input
           type="text"
           placeholder="Enter coupon code"
