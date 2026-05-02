@@ -45,7 +45,7 @@ const ProductListItem = ({ name, image, color, price, quantity }: ProductListIte
     <div className="flex">
       <div
         style={{ '--image-url': `url("${image}")` } as React.CSSProperties}
-        className="w-[100px] h-[100px] border border-[#0000001f] rounded-xl bg-white bg-[image:var(--image-url)] bg-auto bg-center bg-no-repeat"
+        className="w-25 h-25 border border-[#0000001f] rounded-xl bg-white bg-(image:--image-url) bg-auto bg-center bg-no-repeat"
       >
       </div>
       <div className="ml-6 flex flex-col flex-1">

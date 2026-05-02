@@ -20,7 +20,7 @@ const articles = [
 
 export const ArticleList = () => {
   return (
-    <div className="flex flex-col gap-y-[52px]">
+    <div className="flex flex-col gap-y-13">
       {articles.map((article) => (
         <ArticleListItem key={article.image} {...article} />
       ))}

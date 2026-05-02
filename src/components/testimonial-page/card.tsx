@@ -17,7 +17,7 @@ export const Card = ({ rating, testimonialIcon, testimonialName, testimonialComm
   };
 
   return (
-    <div className={`w-[350px] px-9 py-7 rounded-lg bg-white shadow-2xl shadow-[#D4D4D8] space-y-3 ${className}`}>
+    <div className={`w-87.5 px-9 py-7 rounded-lg bg-white shadow-2xl shadow-[#D4D4D8] space-y-3 ${className}`}>
       <div className="flex items-center gap-4">
         {testimonialIcon}
         <div className="flex gap-1">

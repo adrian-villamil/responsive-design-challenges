@@ -24,9 +24,9 @@ export default function JoinOurNewsletterPage() {
         className="mt-20"
       />
       <h1 className="text-3xl sm:text-5xl font-semibold mt-7 mb-6 text-center">Join our newsletter</h1>
-      <p className="max-w-[700px] text-base sm:text-xl text-center text-[#6C727F] sm:leading-[1.9rem]">Keep up with our latest collections, exclusive deals, and special offers!</p>
-      <p className="max-w-[700px] text-base sm:text-xl text-center text-[#6C727F] sm:leading-[1.9rem]">We introduce a new collection every week, so stay tuned to snag the hottest items just for you.</p>
-      <form className="w-fit sm:w-[560px] flex flex-col bg-white mt-10 sm:mt-14 p-6 rounded-2xl shadow-lg space-y-6">
+      <p className="max-w-175 text-base sm:text-xl text-center text-[#6C727F] sm:leading-[1.9rem]">Keep up with our latest collections, exclusive deals, and special offers!</p>
+      <p className="max-w-175 text-base sm:text-xl text-center text-[#6C727F] sm:leading-[1.9rem]">We introduce a new collection every week, so stay tuned to snag the hottest items just for you.</p>
+      <form className="w-fit sm:w-140 flex flex-col bg-white mt-10 sm:mt-14 p-6 rounded-2xl shadow-lg space-y-6">
         <input
           type="email"
           name="my-email"

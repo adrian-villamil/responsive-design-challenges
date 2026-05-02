@@ -16,7 +16,7 @@ const sora = Sora({
 export default function TestimonialPage() {
   return (
     <main className={`h-screen bg-[#FAFAF9] ${sora.className}`}>
-      <div className="max-w-screen-xl mx-auto px-6 sm:px-16 pt-24 md:pt-36 pb-16 md:pb-0 flex flex-col md:flex-row gap-y-16 md:gap-x-6">
+      <div className="max-w-(--breakpoint-xl) mx-auto px-6 sm:px-16 pt-24 md:pt-36 pb-16 md:pb-0 flex flex-col md:flex-row gap-y-16 md:gap-x-6">
         <div className="space-y-8 flex-1">
           <div className="">
             <div className="w-11 h-11 rounded-full flex justify-center items-center bg-[#F5C044]">⭐️</div>
@@ -38,7 +38,7 @@ export default function TestimonialPage() {
                 alt="google-icon"
                 width={480}
                 height={160}
-                className="w-[90px]"
+                className="w-22.5"
                 priority
               />
             }

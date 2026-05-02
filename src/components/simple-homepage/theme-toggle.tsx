@@ -29,12 +29,12 @@ export const ThemeToggle = () => {
       <span
         className={`
           absolute cursor-pointer top-0 left-0 right-0 bottom-0 rounded-3xl bg-[#223344] transition-all
-          before:absolute before:w-5 before:h-5 before:right-[2px] before:bottom-[2px] before:bg-white before:rounded-full before:transition-all
+          before:absolute before:w-5 before:h-5 before:right-0.5 before:bottom-0.5 before:bg-white before:rounded-full before:transition-all
           peer-checked:before:bg-white peer-checked:before:-translate-x-6
         `}
       ></span>
-      <span className="w-5 h-5 cursor-pointer absolute top-[2px] right-[2px] rounded-full bg-[url('/simple-homepage/Sun_fill.svg')] peer-checked:bg-[url('/simple-homepage/Sun_fill_light.svg')] bg-center bg-[length:18px_18px] transition-all"></span>
-      <span className="w-5 h-5 cursor-pointer absolute top-[2px] left-[2px] rounded-full bg-[url('/simple-homepage/Moon_fill_light.svg')] peer-checked:bg-[url('/simple-homepage/Moon_fill.svg')] bg-center bg-[length:18px_18px] transition-all"></span>
+      <span className="w-5 h-5 cursor-pointer absolute top-0.5 right-0.5 rounded-full bg-[url('/simple-homepage/Sun_fill.svg')] peer-checked:bg-[url('/simple-homepage/Sun_fill_light.svg')] bg-center bg-size-[18px_18px] transition-all"></span>
+      <span className="w-5 h-5 cursor-pointer absolute top-0.5 left-0.5 rounded-full bg-[url('/simple-homepage/Moon_fill_light.svg')] peer-checked:bg-[url('/simple-homepage/Moon_fill.svg')] bg-center bg-size-[18px_18px] transition-all"></span>
     </label>
   );
 };

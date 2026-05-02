@@ -13,7 +13,7 @@ const outfitFont = Outfit({
 
 export default function MeetTeamSectionPage() {
   return (
-    <main className={`min-h-screen py-[74px] ${outfitFont.className} bg-white`}>
+    <main className={`min-h-screen py-18.5 ${outfitFont.className} bg-white`}>
       <GridList />
     </main>
   );

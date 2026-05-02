@@ -53,7 +53,7 @@ const processList = [
 
 export const ProcessList = () => {
   return (
-    <div className="pl-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-7 sm:gap-y-6">
+    <div className="grid grid-cols-1 gap-x-5 gap-y-7 pl-5 sm:grid-cols-2 sm:gap-y-6 lg:grid-cols-4">
       {processList.map((item) => (
         <ProcessListItem key={item.title} {...item} />
       ))}
@@ -78,10 +78,10 @@ const ProcessListItem = ({
         <Image src={iconUrl} alt="process_icon" width={52} height={52} />
       </div>
       <div className="space-y-5">
-        <h6 className="text-lg text-[#374151] font-extrabold tracking-wider leading-6 relative before:absolute before:top-0 before:-left-5 before:h-full before:border-l-2 before:border-l-[#6B59D0]">
+        <h6 className="relative text-lg leading-6 font-extrabold tracking-wider text-[#374151] before:absolute before:top-0 before:-left-5 before:h-full before:border-l-2 before:border-l-[#6B59D0]">
           {title}
         </h6>
-        <p className="md:w-[238px] md:group-first:w-full lg:group-first:w-[238px] text-lg tracking-wider text-[#6B7280]">
+        <p className="text-lg tracking-wider text-[#6B7280] md:w-59.5 md:group-first:w-full lg:group-first:w-59.5">
           {description}
         </p>
       </div>

@@ -1,6 +1,6 @@
 export const Form = () => {
   return (
-    <form action="" className="sm:w-full xl:max-w-[810px] mx-auto mt-[70px] p-8 pb-28 lg:pb-8 rounded-3xl grid grid-cols-1 lg:grid-cols-2 gap-x-[18px] gap-y-[22px] bg-[#F8FAFC]/20">
+    <form action="" className="sm:w-full xl:max-w-202.5 mx-auto mt-17.5 p-8 pb-28 lg:pb-8 rounded-3xl grid grid-cols-1 lg:grid-cols-2 gap-x-4.5 gap-y-5.5 bg-[#F8FAFC]/20">
       <div className="flex flex-col">
         <Label htmlFor="name">Name</Label>
         <Input type="text" id="name" placeholder="Ethan Johnson" />
@@ -30,12 +30,12 @@ export const Form = () => {
         <textarea
           name="message"
           id="message"
-          className="w-full h-52 mt-[3px] p-[22px] rounded-2xl font-bold bg-[#F8FAFC]"
+          className="w-full h-52 mt-0.75 p-5.5 rounded-2xl font-bold bg-[#F8FAFC]"
           defaultValue={'50-100 employees'}
         >
         </textarea>
       </div>
-      <button className="lg:col-span-2 w-full p-[22px] rounded-2xl text-xl font-bold text-[#4036A9] bg-white">
+      <button className="lg:col-span-2 w-full p-5.5 rounded-2xl text-xl font-bold text-[#4036A9] bg-white">
         Contact Sales
       </button>
     </form>
@@ -61,7 +61,7 @@ const Input = ({ ...props }: InputProps) => {
   return (
     <input
       {...props}
-      className="mt-[3px] p-[22px] rounded-2xl bg-[#F8FAFC] placeholder:text-[#CDD5E0]"
+      className="mt-0.75 p-5.5 rounded-2xl bg-[#F8FAFC] placeholder:text-[#CDD5E0]"
     />
   );
 };
@@ -72,7 +72,7 @@ const Select = ({ ...props }: SelectProps) => {
   return (
     <select
       {...props}
-      className="w-full mt-[3px] p-[22px] rounded-2xl font-bold appearance-none bg-[#F8FAFC] bg-[url('/contact-page/Expand_down.svg')] bg-no-repeat bg-[center_right_1.3rem]"
+      className="w-full mt-0.75 p-5.5 rounded-2xl font-bold appearance-none bg-[#F8FAFC] bg-[url('/contact-page/Expand_down.svg')] bg-no-repeat bg-position-[center_right_1.3rem]"
     >
       {props.children}
     </select>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Card = () => {
   return (
-    <div className="w-[368px] rounded-xl flex flex-col divide-y bg-white shadow-2xl relative top-[164px] left-1/2 -translate-x-1/2">
+    <div className="w-92 rounded-xl flex flex-col divide-y bg-white shadow-2xl relative top-41 left-1/2 -translate-x-1/2">
       <div className="flex flex-col gap-y-4 p-4 pb-5">
         <Image
           src={'/minimal-blog-card/cactus_img.jpg'}

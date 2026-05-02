@@ -8,7 +8,7 @@ const poppins = Poppins({
 
 export const Card = () => {
   return (
-    <div className="w-[420px] rounded-xl overflow-hidden relative top-28 left-1/2 -translate-x-1/2 bg-white divide-y divide-[#F2F5F9]">
+    <div className="w-105 rounded-xl overflow-hidden relative top-28 left-1/2 -translate-x-1/2 bg-white divide-y divide-[#F2F5F9]">
       <div>
         <div className="relative">
           <Image
@@ -24,7 +24,7 @@ export const Card = () => {
             alt="white-overlay"
             width={418}
             height={68}
-            className="absolute -bottom-[1px] w-full"
+            className="absolute -bottom-px w-full"
             priority
           />
         </div>
@@ -34,7 +34,7 @@ export const Card = () => {
         </div>
       </div>
       <div className="px-8 py-6 flex items-center gap-x-4">
-        <div className="w-9 rounded-full overflow-hidden outline outline-offset-1 outline-3 outline-[#F2F5F9]">
+        <div className="w-9 rounded-full overflow-hidden outline-solid outline-offset-1 outline-3 outline-[#F2F5F9]">
           <Image
             src={'/business-blog-card/avatar-image-business-card.png'}
             alt="avatar-image"

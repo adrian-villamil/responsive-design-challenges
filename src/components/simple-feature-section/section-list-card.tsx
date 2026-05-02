@@ -10,10 +10,10 @@ interface Props {
 
 export const SectionListCard = ({ avatarContent, avatarColor, title, description, image }: Props) => {
   return (
-    <div className="w-[315px] p-6 rounded-2xl bg-[#212936] hover:shadow-md hover:shadow-[#9DA3AE] transition-all">
+    <div className="w-78.75 p-6 rounded-2xl bg-[#212936] hover:shadow-md hover:shadow-[#9DA3AE] transition-all">
       <span
         style={{ backgroundColor: avatarColor }}
-        className="w-[50px] h-[50px] rounded-full flex justify-center items-center text-xl hover:animate-spin"
+        className="w-12.5 h-12.5 rounded-full flex justify-center items-center text-xl hover:animate-spin"
       >
         {avatarContent}
       </span>

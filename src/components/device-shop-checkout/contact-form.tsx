@@ -10,8 +10,8 @@ export const ContactForm = () => {
             name="country"
             id="country"
             className={
-              `w-full flex-1 px-4 py-[14px] border border-[#0000001f] rounded-lg placeholder:text-[#6C727F] font-medium
-              appearance-none bg-[url('/device-shop-checkout/dropdown-arrow.svg')] bg-[position:calc(100%-18px)_center] bg-no-repeat
+              `w-full flex-1 px-4 py-3.5 border border-[#0000001f] rounded-lg placeholder:text-[#6C727F] font-medium
+              appearance-none bg-[url('/device-shop-checkout/dropdown-arrow.svg')] bg-position-[calc(100%-18px)_center] bg-no-repeat
               bg-[#F3F4F6] relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[rgba(0,0,0,0.04)]`
             }
           >
@@ -20,7 +20,7 @@ export const ContactForm = () => {
         </div>
         <Input label="Postal Code" placeholder="00270" />
       </div>
-      <button className="w-full px-4 py-[14px] text-white bg-[#1D1D1F] rounded-lg">Continue</button>
+      <button className="w-full px-4 py-3.5 text-white bg-[#1D1D1F] rounded-lg">Continue</button>
     </form>
   );
 };
@@ -40,7 +40,7 @@ const Input = ({ label, ...props }: InputProps) => {
       </label>
       <input
         type="text"
-        className="w-full px-4 py-[14px] bg-[#F3F4F6] relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[rgba(0,0,0,0.04)] border border-[#0000001f] rounded-lg placeholder:text-[#6C727F]"
+        className="w-full px-4 py-3.5 bg-[#F3F4F6] relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[rgba(0,0,0,0.04)] border border-[#0000001f] rounded-lg placeholder:text-[#6C727F]"
         {...props}
       />
     </div>

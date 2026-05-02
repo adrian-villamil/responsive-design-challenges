@@ -7,8 +7,8 @@ export const CloseMenuButton = () => {
   
   return (
     <button className="float-right px-2 py-4" onClick={closeMenu}>
-      <div className="w-[22px] h-[3px] rounded bg-[#223344] dark:bg-[#909193] translate-y-[1.5px] rotate-45"></div>
-      <div className="w-[22px] h-[3px] rounded bg-[#223344] dark:bg-[#909193] -translate-y-[1.5px] -rotate-45"></div>
+      <div className="w-5.5 h-0.75 rounded-sm bg-[#223344] dark:bg-[#909193] translate-y-[1.5px] rotate-45"></div>
+      <div className="w-5.5 h-0.75 rounded-sm bg-[#223344] dark:bg-[#909193] translate-y-[-1.5px] -rotate-45"></div>
     </button>
   );
 };
