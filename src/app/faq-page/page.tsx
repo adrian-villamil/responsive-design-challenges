@@ -42,10 +42,10 @@ export default function FaqPage() {
       </div>
 
       <div className="mt-5.5 flex flex-col items-center gap-y-2.25 sm:mt-5">
-        <h4 className="text-xl font-medium tracking-[-0.003em]">
+        <h4 className="text-center text-xl font-medium tracking-[-0.003em]">
           Products, Website or Brand Design, we’ve got you covered!
         </h4>
-        <p className="tracking-[-0.0094em] text-[#97A3B6]">
+        <p className="text-center tracking-[-0.0094em] text-[#97A3B6]">
           Give us your questions, and we can help you achieve our goals
           together!
         </p>

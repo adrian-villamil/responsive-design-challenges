@@ -44,7 +44,9 @@ interface TabsListProps {
 
 export const TabsList = ({ children }: TabsListProps) => {
   return (
-    <div className="flex items-center justify-center gap-6">{children}</div>
+    <div className="flex flex-wrap items-center justify-center gap-6">
+      {children}
+    </div>
   );
 };
 
