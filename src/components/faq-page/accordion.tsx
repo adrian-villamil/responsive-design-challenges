@@ -1,7 +1,6 @@
 "use client";
 
 import clsx from "clsx";
-import Image from "next/image";
 import { createContext, useContext, useState } from "react";
 import { ExpandDownIcon } from "./expand-down-icon";
 

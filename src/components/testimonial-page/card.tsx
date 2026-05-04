@@ -1,5 +1,7 @@
 import { MdxImage as Image } from "./mdx-image";
 
+import type { JSX } from "react";
+
 interface Props {
   rating: 1 | 2 | 3 | 4 | 5;
   testimonialIcon: JSX.Element;

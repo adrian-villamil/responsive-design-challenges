@@ -75,7 +75,13 @@ const ProcessListItem = ({
   return (
     <div className="group flex flex-col gap-y-8 before:absolute before:top-0 before:-z-10 before:h-full before:-translate-x-5 before:border-l-2 before:border-dashed">
       <div className="flex align-middle">
-        <Image src={iconUrl} alt="process_icon" width={52} height={52} />
+        <Image
+          src={iconUrl}
+          alt="process_icon"
+          width={52}
+          height={52}
+          loading="eager"
+        />
       </div>
       <div className="space-y-5">
         <h6 className="relative text-lg leading-6 font-extrabold tracking-wider text-[#374151] before:absolute before:top-0 before:-left-5 before:h-full before:border-l-2 before:border-l-[#6B59D0]">

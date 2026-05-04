@@ -8,41 +8,49 @@ interface Props {
   challengeUrl: string;
 }
 
-export const ChallengesListCard = ({ image, title, pathname, challengeUrl }: Props) => {
+export const ChallengesListCard = ({
+  image,
+  title,
+  pathname,
+  challengeUrl,
+}: Props) => {
   return (
-    <div className="w-96 flex flex-col border rounded-xl overflow-hidden shadow-lg divide-y bg-white">
+    <div className="flex w-96 flex-col divide-y overflow-hidden rounded-xl border bg-white shadow-lg">
       <Image
         src={image}
         alt={title}
         width={1280}
         height={945}
+        loading="eager"
         className="w-full"
       />
-      <div className="flex-1 flex flex-col justify-between p-6 space-y-4">
+      <div className="flex flex-1 flex-col justify-between space-y-4 p-6">
         <h1 className="text-base font-semibold">{title}</h1>
         <div className="flex gap-6">
           <Link
             href={pathname}
-            className="flex-1 flex justify-center items-center gap-4 px-4 py-2 rounded-lg border text-sm hover:bg-neutral-100 transition-colors"
+            className="flex flex-1 items-center justify-center gap-4 rounded-lg border px-4 py-2 text-sm transition-colors hover:bg-neutral-100"
           >
             <Image
-              src={'/challenges/eye.svg'}
+              src={"/challenges/eye.svg"}
               alt="eye-icon"
               width={20}
               height={20}
+              loading="eager"
             />
             View
           </Link>
           <Link
             href={challengeUrl}
             target="_blank"
-            className="flex-1 flex justify-center items-center gap-4 px-4 py-2 rounded-lg text-sm text-white bg-black/85 hover:bg-black/75 transition-colors"
+            className="flex flex-1 items-center justify-center gap-4 rounded-lg bg-black/85 px-4 py-2 text-sm text-white transition-colors hover:bg-black/75"
           >
             <Image
-              src={'/challenges/external-link.svg'}
+              src={"/challenges/external-link.svg"}
               alt="external-link-icon"
               width={20}
               height={20}
+              loading="eager"
             />
             Practice
           </Link>
