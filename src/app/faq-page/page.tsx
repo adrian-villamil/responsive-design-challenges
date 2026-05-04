@@ -35,7 +35,7 @@ export default function FaqPage() {
     <main
       className={`min-h-screen ${beVietnamPro.className} bg-[#12111F] text-[#F2F5F9]`}
     >
-      <div className="mt-1.25 flex h-74 items-center justify-center bg-[url('/faq-page/faq-title-bg@2x.png')] bg-auto bg-center bg-no-repeat sm:bg-[url('/faq-page/faq-title-bg.svg')]">
+      <div className="mt-1.25 flex h-60 items-center justify-center bg-[url('/faq-page/faq-title-bg@2x.png')] bg-auto bg-center bg-no-repeat sm:h-74 sm:bg-[url('/faq-page/faq-title-bg.svg')]">
         <h1 className="w-full text-center text-4xl leading-14 font-bold tracking-[-0.010em] text-[#97A3B6] sm:max-w-107.5 sm:text-5xl sm:leading-18">
           Frequently Asked Questions
         </h1>
