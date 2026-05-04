@@ -35,17 +35,17 @@ export default function FaqPage() {
     <main
       className={`min-h-screen ${beVietnamPro.className} bg-[#12111F] text-[#F2F5F9]`}
     >
-      <div className="mt-1.25 flex h-51 items-center justify-center bg-[url('/faq-page/faq-title-bg@2x.png')] bg-auto bg-center bg-no-repeat sm:h-74 sm:bg-[url('/faq-page/faq-title-bg.svg')]">
-        <h1 className="w-full text-center text-4xl leading-18 font-bold tracking-[-0.010em] text-[#97A3B6] sm:max-w-107.5 sm:text-5xl">
+      <div className="mt-1.25 flex h-74 items-center justify-center bg-[url('/faq-page/faq-title-bg@2x.png')] bg-auto bg-center bg-no-repeat sm:bg-[url('/faq-page/faq-title-bg.svg')]">
+        <h1 className="w-full text-center text-4xl leading-14 font-bold tracking-[-0.010em] text-[#97A3B6] sm:max-w-107.5 sm:text-5xl sm:leading-18">
           Frequently Asked Questions
         </h1>
       </div>
 
-      <div className="mt-5.5 flex flex-col items-center gap-y-2.25 sm:mt-5">
-        <h4 className="text-center text-xl font-medium tracking-[-0.003em]">
+      <div className="mt-5 flex flex-col items-center gap-y-2.25">
+        <h4 className="w-9/10 text-center text-xl font-medium tracking-[-0.003em] sm:w-full">
           Products, Website or Brand Design, we’ve got you covered!
         </h4>
-        <p className="text-center tracking-[-0.0094em] text-[#97A3B6]">
+        <p className="w-9/10 text-center tracking-[-0.0094em] text-[#97A3B6] sm:w-full">
           Give us your questions, and we can help you achieve our goals
           together!
         </p>
