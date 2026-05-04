@@ -28,7 +28,7 @@ export default function FaqPage() {
   );
 
   const getAccordionBody = (body: React.ReactNode) => (
-    <p className="tracking-[-0.020em] text-[#CDD5E0]">{body}</p>
+    <p className="tracking-[-0.020em] text-balance text-[#CDD5E0]">{body}</p>
   );
 
   return (
@@ -80,84 +80,86 @@ export default function FaqPage() {
 
             <Accordion defaultExpanded>
               <AccordionSummary>
-                <p className="text-xl font-medium">
-                  Which platform do you support?
-                </p>
+                {getAccordionLabel(<>Which platform do you support?</>)}
               </AccordionSummary>
 
               <AccordionDetails>
-                <p className="tracking-[-0.020em] text-[#CDD5E0]">
-                  In a situational interview, the interviewer may ask how you
-                  overcame a difficult situation and what you learned from it.
-                  You can use your response to demonstrate your flexibility and
-                  share an example of how you transformed a negative experience
-                  into a positive outcome{" "}
-                </p>
+                {getAccordionBody(
+                  <>
+                    In a situational interview, the interviewer may ask how you
+                    overcame a difficult situation and what you learned from it.
+                    You can use your response to demonstrate your flexibility
+                    and share an example of how you transformed a negative
+                    experience into a positive outcome{" "}
+                  </>,
+                )}
               </AccordionDetails>
             </Accordion>
 
             <Accordion defaultExpanded>
               <AccordionSummary>
-                <p className="text-xl font-medium">
-                  How do I invite my teammates?
-                </p>
+                {getAccordionLabel(<>How do I invite my teammates?</>)}
               </AccordionSummary>
 
               <AccordionDetails>
-                <p className="tracking-[-0.020em] text-[#CDD5E0]">
-                  Collect the contact information of your teammates, including
-                  their email addresses or usernames on the platform you will
-                  use.
-                </p>
+                {getAccordionBody(
+                  <>
+                    Collect the contact information of your teammates, including
+                    their email addresses or usernames on the platform you will
+                    use.
+                  </>,
+                )}
               </AccordionDetails>
             </Accordion>
 
             <Accordion>
               <AccordionSummary>
-                <p className="text-xl font-medium">Do you have annual plan?</p>
+                {getAccordionLabel(<>Do you have annual plan?</>)}
               </AccordionSummary>
 
               <AccordionDetails>
-                <p className="tracking-[-0.020em] text-[#CDD5E0]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quibusdam, nobis minus temporibus est esse delectus et
-                  voluptatibus ex illo ea iste earum voluptas architecto cum
-                  similique illum nemo, distinctio hic!
-                </p>
+                {getAccordionBody(
+                  <>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quibusdam, nobis minus temporibus est esse delectus et
+                    voluptatibus ex illo ea iste earum voluptas architecto cum
+                    similique illum nemo, distinctio hic!
+                  </>,
+                )}
               </AccordionDetails>
             </Accordion>
 
             <Accordion>
               <AccordionSummary>
-                <p className="text-xl font-medium">
-                  How to create new workspace
-                </p>
+                {getAccordionLabel(<>How to create new workspace</>)}
               </AccordionSummary>
 
               <AccordionDetails>
-                <p className="tracking-[-0.020em] text-[#CDD5E0]">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Perspiciatis inventore praesentium doloribus, tempora sequi
-                  distinctio autem totam alias illum cum cupiditate numquam
-                  explicabo culpa a aspernatur eligendi quae omnis odio.
-                </p>
+                {getAccordionBody(
+                  <>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Perspiciatis inventore praesentium doloribus, tempora sequi
+                    distinctio autem totam alias illum cum cupiditate numquam
+                    explicabo culpa a aspernatur eligendi quae omnis odio.
+                  </>,
+                )}
               </AccordionDetails>
             </Accordion>
 
             <Accordion>
               <AccordionSummary>
-                <p className="text-xl font-medium">
-                  How do I set roles & permissions?
-                </p>
+                {getAccordionLabel(<>How do I set roles & permissions?</>)}
               </AccordionSummary>
 
               <AccordionDetails>
-                <p className="tracking-[-0.020em] text-[#CDD5E0]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                  aliquid sapiente illo, reprehenderit neque ex facere dolorem!
-                  Distinctio nam voluptatem nihil architecto, commodi ducimus
-                  rerum saepe quos, maxime excepturi assumenda.
-                </p>
+                {getAccordionBody(
+                  <>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde aliquid sapiente illo, reprehenderit neque ex facere
+                    dolorem! Distinctio nam voluptatem nihil architecto, commodi
+                    ducimus rerum saepe quos, maxime excepturi assumenda.
+                  </>,
+                )}
               </AccordionDetails>
             </Accordion>
           </div>
@@ -166,16 +168,18 @@ export default function FaqPage() {
         <TabsContent value="design-system">
           <Accordion defaultExpanded>
             <AccordionSummary>
-              <p className="text-xl">Design System Content</p>
+              {getAccordionLabel(<>Design System Content</>)}
             </AccordionSummary>
 
             <AccordionDetails>
-              <p className="tracking-[-0.020em] text-[#CDD5E0]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                blanditiis quibusdam quas aliquid voluptatum culpa deserunt
-                beatae sit velit, officia ullam obcaecati at omnis vel,
-                asperiores, minima quia. Officiis, maiores.
-              </p>
+              {getAccordionBody(
+                <>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis blanditiis quibusdam quas aliquid voluptatum culpa
+                  deserunt beatae sit velit, officia ullam obcaecati at omnis
+                  vel, asperiores, minima quia. Officiis, maiores.
+                </>,
+              )}
             </AccordionDetails>
           </Accordion>
         </TabsContent>
@@ -183,16 +187,18 @@ export default function FaqPage() {
         <TabsContent value="brand-design">
           <Accordion defaultExpanded>
             <AccordionSummary>
-              <p className="text-xl">Brand Design Content</p>
+              {getAccordionLabel(<>Brand Design Content</>)}
             </AccordionSummary>
 
             <AccordionDetails>
-              <p className="tracking-[-0.020em] text-[#CDD5E0]">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Dolore, reiciendis obcaecati iste ullam saepe omnis delectus vel
-                quisquam soluta id iusto a. Inventore qui tempore quo iusto
-                cupiditate a? Iusto.
-              </p>
+              {getAccordionBody(
+                <>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolore, reiciendis obcaecati iste ullam saepe omnis delectus
+                  vel quisquam soluta id iusto a. Inventore qui tempore quo
+                  iusto cupiditate a? Iusto.
+                </>,
+              )}
             </AccordionDetails>
           </Accordion>
         </TabsContent>
@@ -200,16 +206,18 @@ export default function FaqPage() {
         <TabsContent value="develop-website">
           <Accordion>
             <AccordionSummary>
-              <p className="text-xl">Develop Website Content</p>
+              {getAccordionLabel(<>Develop Website Content</>)}
             </AccordionSummary>
 
             <AccordionDetails>
-              <p className="tracking-[-0.020em] text-[#CDD5E0]">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Veritatis vero non doloremque perferendis itaque sunt
-                dignissimos alias similique incidunt nulla fugiat quidem nemo
-                tempore iste, temporibus dolore unde provident doloribus?
-              </p>
+              {getAccordionBody(
+                <>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Veritatis vero non doloremque perferendis itaque sunt
+                  dignissimos alias similique incidunt nulla fugiat quidem nemo
+                  tempore iste, temporibus dolore unde provident doloribus?
+                </>,
+              )}
             </AccordionDetails>
           </Accordion>
         </TabsContent>
