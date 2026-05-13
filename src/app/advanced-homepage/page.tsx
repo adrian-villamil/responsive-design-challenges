@@ -16,7 +16,8 @@ const sora = Sora({
 
 export default function AdvancedHomepage() {
   return (
-    <main className={`min-h-screen ${sora.className}`}>
+    <main className={`min-h-screen ${sora.className} relative`}>
+      <div className="absolute top-0 left-0 -z-20 h-full w-full bg-[#F6F7FB]" />
       <HeroSection />
       <CreativeSection />
       <ComponentsSection />
