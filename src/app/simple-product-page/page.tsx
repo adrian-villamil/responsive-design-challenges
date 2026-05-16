@@ -61,7 +61,7 @@ export default function SimpleProductPage() {
             </div>
 
             <div className="space-y-3">
-              <h4 className="leading-[normal] font-semibold tracking-[-1%]">
+              <h4 className="font-semibold tracking-[-1%]">
                 Hightlights:
               </h4>
 
